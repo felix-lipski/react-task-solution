@@ -1,0 +1,65 @@
+@import "../colors";
+
+.order {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  ul.review {
+    padding: 1em;
+    padding-top: 0.5em;
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: $gray;
+  }
+
+  button {
+    float: left;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    button {
+      margin-top: 70px;
+    }
+  }
+
+  label {
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 6px 12px;
+    font-size: 20px;
+    border: 1px solid $vlgray;
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .order {
+    width: auto;
+    margin: 1em;
+  }
+}
+
+

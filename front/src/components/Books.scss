@@ -1,0 +1,31 @@
+@import "../colors";
+
+ul.books {
+  list-style-type: none;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+@media (max-width: 1600px) {
+  ul.books {
+    margin-right:   10%;
+    margin-left:    10%;    
+    padding-inline-start: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  ul.books {
+    margin-right:   0;
+    margin-left:    0;    
+    padding-inline-start: 0px;
+    
+    li{
+      flex-direction: column;
+
+      .desc {
+          margin-left: 0px;
+      }
+    }
+  }    
+}

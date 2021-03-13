@@ -1,0 +1,45 @@
+@import "../colors";
+
+header {
+  background: $lgray;
+  box-shadow: 0px 0px 10px 0px $gray;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+      
+    ul {
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+
+      li {
+        padding: 1em;
+        
+        &:hover {
+            background: darken($lgray, 10%);
+        }
+
+        small {
+          background-color: $orange;
+          border: none;
+          color: white;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin-left: 10px;
+          cursor: pointer;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}

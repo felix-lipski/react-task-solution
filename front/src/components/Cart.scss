@@ -1,0 +1,19 @@
+.cart {
+  display: flex; 
+  flex-direction: column;
+  h1 {
+    text-align: center;
+  }
+  p {
+    // float: right;
+    margin: auto;
+  }
+  .next {
+    margin-right: 20%;
+    margin-bottom: 200px;
+  }
+}
+
+.no-cart {
+  text-align: center;
+}

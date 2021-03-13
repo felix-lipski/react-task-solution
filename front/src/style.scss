@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "colors";
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 18px;
+}
+
+button {
+  box-shadow: 0px 0px 5px 0px $gray;
+  background-color: $orange;
+  border: none;
+  color: white;
+  margin: 20px 20px 0px 20px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+  cursor: pointer;
+  
+  &:hover {
+    background: darken($orange, 10%);
+  }
+}
+
+.fa-right {
+  margin-left: 10px;
+}
+
+.fa-left {
+  margin-right: 10px;
+}
+
+.plus-minus {
+  cursor: pointer;
+  user-select: none;
+}
+
+.error {
+  color: red;
+}
