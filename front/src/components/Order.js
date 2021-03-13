@@ -17,7 +17,7 @@ const validate = values => {
   (values.first_name.length > 50) && (errors.first_name = 'Podane imię jest za długie' );
   (values.last_name.length  < 5 ) && (errors.last_name  = 'Podane nazwisko jest za krótkie');
   (values.last_name.length  > 50) && (errors.last_name  = 'Podane nazwisko jest za długie' );
-  !(/\d{2}-\d{3}/.test(values.zip_code)) && (errors.zip_code = 'Proszę wprowadzić poprawny kod pocztowy');
+  !(/^\d{2}-\d{3}$/.test(values.zip_code)) && (errors.zip_code = 'Proszę wprowadzić poprawny kod pocztowy');
   Object.keys(initialValues).map((x) => (!values[x] && (errors[x] = 'Pole wymagane')));
   return errors
 }
