@@ -11,7 +11,6 @@ import { faChevronLeft }    from '@fortawesome/free-solid-svg-icons'
 
 const initialValues = {first_name: '', last_name: '', city: '', zip_code: ''}
 const validate = values => {
-  // walidacja zgodna z walidacją serwera
   const errors = {};
   (values.first_name.length < 4 ) && (errors.first_name = 'Podane imię jest za krótkie');
   (values.first_name.length > 50) && (errors.first_name = 'Podane imię jest za długie' );
