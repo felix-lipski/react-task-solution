@@ -1,6 +1,6 @@
 # Rozwiązanie Zadania Rekrutacyjnego - Jan Lipski
 
-## Uruchomianie rozwiązania zadania
+## Uruchamianie rozwiązania zadania
 Należy uruchomić:
 ```bash
 cd front
